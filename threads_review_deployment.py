@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[14]:
+# In[ ]:
 
 
 import streamlit as st
@@ -16,7 +16,7 @@ import spacy
 with open("svm_model.pkl", "rb") as file:
     model = pickle.load(file)
 
-with open("tfid_vectorizer.pk1", "rb") as file:
+with open("tfid_vectorizer.pkl", "rb") as file:
     vectorizer = pickle.load(file)
 
 nltk.download('stopwords')
@@ -53,7 +53,7 @@ st.subheader("Enter your text here:")
 user_input = st.text_area("")
 
 
-# In[15]:
+# In[ ]:
 
 
 if user_input:
